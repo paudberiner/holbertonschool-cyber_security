@@ -23,7 +23,6 @@ function print_line(prefix, field, value,   label) {
   label = prefix field
   if (field == "Street") print label ", " safe(value); else print label "," safe(value)
 }
-function print_block(prefix, arr,   i,k,v){
+function print_block(prefix, arr,i,k,v){
   for (i=1;i<=12;i++){ k=F[i]; v=arr[k]; print_line(prefix,k,v) }
 }
-'
